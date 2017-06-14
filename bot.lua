@@ -214,7 +214,7 @@ function get_bot (i, adigram)
                     else
                       redis:sadd('botBOT-IDadmin', matches)
                       redis:sadd('botBOT-IDmod', matches)
-                      return send(msg.chat_id_, msg.id_, "<code>🤖فرد به مدیریت ربات ارتقا یافت\n➖➖➖\nاکنون میتواند ربات را مدیریت کند✔️</code>\n➖➖➖\n🚀کانال ما : @Nice20Team\n😉سازنده : @mohammadrezajiji")
+                      return send(msg.chat_id_, msg.id_, "<code>🤖فرد به مدیریت ربات ارتقا یافت\n➖➖➖\nاکنون میتواند ربات را مدیریت کند✔️</code>\n➖➖➖\n🚀کانال ما : @Nice20Team\n😉سازنده : @Nice20Admin")
                     end
                   elseif text:match("([Rr]emowner) (%d+)") or text:match("(حذف مدیر) (%d+)") then
                     local matches = text:match("%d+")
